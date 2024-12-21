@@ -532,6 +532,7 @@ def aliexpress_product_scraper():
     
     # Input field for the query
     query = st.text_input("Search Query", value="iphone")
+    num_pages = st.number_input("Number of Pages to Retrieve", min_value=1, max_value=100, value=10, step=1)
     search_button = st.button("Search")
     
     if search_button:
@@ -545,8 +546,8 @@ def aliexpress_product_scraper():
     
         all_products = []  # List to collect data from all pages
     
-        # Loop through 10 pages
-        for page in range(1, 11):
+        # Loop through user-specified number of pages
+        for page in range(1, num_pages + 1):
             st.write(f"Fetching page {page}...")  # Display progress
             querystring = {"q": query, "page": str(page), "sort": "default"}
     
@@ -593,6 +594,7 @@ def aliexpress_product_scraper():
             )
         else:
             st.error("No products were fetched. Please try again.")
+
 
 # Main function
 def main():

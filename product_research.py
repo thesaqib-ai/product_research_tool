@@ -7,7 +7,7 @@ from io import BytesIO
 
 # Sidebar navigation
 def sidebar():
-    st.sidebar.title("Navigation")
+    st.sidebar.title("Product Research")
     app = st.sidebar.radio("Select an App:", ("TikTok Ads Scraper", "Meta Ads Scraper", "AliExpress Product Scraper"))
     return app
 

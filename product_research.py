@@ -427,8 +427,6 @@ def tiktok_ads_scraper():
             
 # Meta Ads Scraper
 def meta_ads_scraper():
-    st.title("Meta Ads Scraper")
-    # Function to decode the Unix timestamp
     def decode_timestamp(timestamp):
         return datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
     

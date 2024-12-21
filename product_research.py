@@ -54,7 +54,6 @@ def tiktok_ads_scraper():
             return re.sub(r'[\x00-\x1F\x7F]', '', value)
         return value
     
-   
     category_names = [
         "Bags", "Clothing Accessories", "High end Jewelry", "Mens Clothing", "Mens Shoes", 
         "Ordinary Jewelry", "Other Apparel & Accessories", "Trad & Ceremonial Clothing", "Watches", 

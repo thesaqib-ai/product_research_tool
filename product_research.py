@@ -443,7 +443,7 @@ def meta_ads_scraper():
             "start_max_date": end_date,
             "ad_type": "all"
         }
-        x_rapidapi_key = st.secrets['X_RAPIDAPI_KEY']
+        x_rapidapi_key = st.secrets['X-RAPIDAPI-KEY']
         headers = {
             "x-rapidapi-key": x_rapidapi_key,
             "x-rapidapi-host": "meta-ad-library.p.rapidapi.com"

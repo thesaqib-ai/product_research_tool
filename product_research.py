@@ -374,7 +374,8 @@ def tiktok_ads_scraper():
                                             "Video Cover URL": ad.get('video_info', {}).get('cover', {}),
                                             "Video Duration": ad.get('video_info', {}).get('duration'),
                                             "Landing Page": detailed_ads.get('landing_page'),
-                                            "Ad Description": sanitize_string(ad.get('ad_title'))
+                                            "Ad Description": sanitize_string(ad.get('ad_title')),
+                                            "Keywords" : detailed_ads['keyword_list']
                                         }
                                         all_ad_data.append(ad_data)
     
